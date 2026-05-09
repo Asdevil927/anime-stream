@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Stream</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">AnimeStream</h1>
+
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search anime..."
+    >
+  </header>
+
+  <section class="categories">
+    <button class="category-btn active" data-category="all">
+      All
+    </button>
+
+    <button class="category-btn" data-category="action">
+      Action
+    </button>
+
+    <button class="category-btn" data-category="romance">
+      Romance
+    </button>
+  </section>
+
+  <section class="anime-section">
+    <h2>Trending Anime</h2>
+
+    <div class="anime-grid" id="trendingGrid"></div>
+  </section>
+
+  <section class="anime-section">
+    <h2>Popular Anime</h2>
+
+    <div class="anime-grid" id="popularGrid"></div>
+  </section>
+
+  <script src="js/anime-data.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
