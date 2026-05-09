@@ -1,0 +1,44 @@
+body{
+  background:#0f0f0f;
+  color:white;
+  font-family:Arial;
+  margin:0;
+  padding:0;
+}
+
+header{
+  background:#1c1c1c;
+  padding:20px;
+  text-align:center;
+}
+
+h1{
+  color:#ff3c78;
+}
+
+.anime-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:#1e1e1e;
+  border-radius:10px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+}
+
+.card h3{
+  text-align:center;
+  padding:10px;
+}
