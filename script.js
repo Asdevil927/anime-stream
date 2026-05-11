@@ -1,42 +1,18 @@
-const trendingGrid = document.getElementById("trendingGrid");
-const popularGrid = document.getElementById("popularGrid");
+const search = document.getElementById("search");
 
-function createCards() {
+search.addEventListener("keyup", () => {
 
-  animeList.forEach(anime => {
+  const value = search.value.toLowerCase();
 
-    const card = `
-      <div class="card" data-category="${anime.category}">
-        <img src="${anime.image}" alt="${anime.title}">
-        <h3>${anime.title}</h3>
-      </div>
-    `;
+  document.querySelectorAll(".card").forEach(card => {
 
-    trendingGrid.innerHTML += card;
-    popularGrid.innerHTML += card;
-  });
-}
+    const title = card.innerText.toLowerCase();
 
-createCards();
-
-document.querySelectorAll(".category-btn").forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    const category = button.dataset.category;
-
-    document.querySelectorAll(".card").forEach(card => {
-
-      if (
-        category === "all" ||
-        card.dataset.category === category
-      ) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-
-    });
+    if (title.includes(value)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
 
   });
 
