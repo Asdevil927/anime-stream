@@ -1,66 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shadow Anime</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header>
     <h1>Shadow Anime</h1>
 
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Search anime..."
-    >
+    <input type="text" id="search" placeholder="Search anime...">
+
+    <div class="categories">
+      <button class="category-btn" data-category="all">All</button>
+      <button class="category-btn" data-category="action">Action</button>
+      <button class="category-btn" data-category="romance">Romance</button>
+    </div>
   </header>
 
-  <section class="categories">
-
-    <button class="category-btn" data-category="all">
-      All
-    </button>
-
-    <button class="category-btn" data-category="action">
-      Action
-    </button>
-
-    <button class="category-btn" data-category="romance">
-      Romance
-    </button>
-
-  </section>
-
-  <section>
+  <main>
 
     <h2>Trending Anime</h2>
 
-    <div class="anime-container" id="trendingGrid">
+    <div class="anime-container">
+
+      <a href="https://hianime.to" target="_blank" class="card" data-category="action">
+        <img src="https://wallpapercave.com/wp/wp4923992.jpg" alt="Naruto">
+        <h3>Naruto</h3>
+      </a>
+
+      <a href="https://hianime.to" target="_blank" class="card" data-category="action">
+        <img src="https://wallpapercave.com/wp/wp9426115.jpg" alt="Attack on Titan">
+        <h3>Attack on Titan</h3>
+      </a>
+
+      <a href="https://hianime.to" target="_blank" class="card" data-category="romance">
+        <img src="https://wallpapercave.com/wp/wp8435573.jpg" alt="Your Name">
+        <h3>Your Name</h3>
+      </a>
 
     </div>
 
-  </section>
+  </main>
 
-  <section>
-
-    <h2>Popular Anime</h2>
-
-    <div class="anime-container" id="popularGrid">
-
-    </div>
-
-  </section>
-
-  <script src="js/anime-data.js"></script>
   <script src="script.js"></script>
 
 </body>
-
 </html>
