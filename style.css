@@ -1,98 +1,175 @@
-body {
+/* RESET */
+
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
   background: #0f0f0f;
   color: white;
+  font-family: Arial, sans-serif;
 }
+
+/* HEADER */
 
 header {
   background: #151515;
   padding: 20px;
+  text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* LOGO AREA */
+
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-h1 {
-  font-size: 28px;
+.logo-area h1 {
+  font-size: 32px;
+  color: #ff003c;
 }
+
+/* SEARCH BAR */
 
 #search {
-  width: 100%;
+  width: 90%;
+  max-width: 500px;
   padding: 12px;
-  margin-top: 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   outline: none;
+  margin-top: 10px;
   font-size: 16px;
+  background: #222;
+  color: white;
 }
 
+/* BUTTONS */
+
 .buttons {
-  margin-top: 15px;
+  margin-top: 18px;
   display: flex;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .category-btn {
   padding: 10px 18px;
   border: none;
   border-radius: 8px;
-  background: crimson;
+  background: #2a2a2a;
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 15px;
 }
 
 .category-btn:hover {
-  background: red;
-  transform: scale(1.05);
+  background: #ff003c;
 }
 
-section {
-  padding: 20px;
+/* ACTIVE BUTTON */
+
+.category-btn.active {
+  background: #ff003c;
+  color: white;
 }
+
+/* SECTION */
+
+section {
+  padding: 25px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ff003c;
+}
+
+/* ANIME CONTAINER */
 
 .anime-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
 }
 
+/* CARD */
+
 .card {
-  background: #1c1c1c;
-  border-radius: 12px;
+  background: #1b1b1b;
+  border-radius: 14px;
   overflow: hidden;
   transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.05);
 }
+
+/* CARD IMAGE */
 
 .card img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
 }
 
+/* CARD TITLE */
+
 .card h3 {
+  padding: 15px;
   text-align: center;
-  padding: 10px;
+  font-size: 18px;
+  color: white;
 }
 
+/* LINKS */
+
 .card a {
-  color: white;
   text-decoration: none;
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .logo-area h1 {
+    font-size: 24px;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .anime-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .card img {
+    height: 250px;
+  }
+
 }
