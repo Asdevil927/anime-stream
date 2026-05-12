@@ -10,7 +10,8 @@
 <body>
 
   <header>
-     <!-- LOGO AREA -->
+
+    <!-- LOGO AREA -->
     <div class="logo-area">
 
       <img
@@ -23,182 +24,25 @@
 
     </div>
 
+    <!-- SEARCH -->
     <input type="text" id="search" placeholder="Search anime...">
 
+    <!-- CATEGORY BUTTONS -->
     <div class="buttons">
       <button class="category-btn" data-category="all">All</button>
       <button class="category-btn" data-category="action">Action</button>
       <button class="category-btn" data-category="romance">Romance</button>
     </div>
+
   </header>
 
   <section>
+
     <h2>Trending Anime</h2>
 
-    <div class="anime-container">
+    <!-- DYNAMIC ANIME CONTAINER -->
+    <div class="anime-container" id="animeContainer"></div>
 
-      <!-- Naruto -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto" target="_blank">
-          <img src="naruto.jpg" alt="naruto">
-          <h3>Naruto</h3>
-        </a>
-      </div>
-
-      <!-- Attack on Titan -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan" target="_blank">
-          <img src="aot.jpg" alt="Attack on Titan">
-          <h3>Attack on Titan</h3>
-        </a>
-      </div>
-
-      <!-- Your Name -->
-      <div class="card" data-category="romance">
-        <a href="https://www.netflix.com/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png" alt="Your Name">
-          <h3>Your Name</h3>
-        </a>
-      </div>
-
-      <!-- Demon Slayer -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba" target="_blank">
-          <img src="demon-slayer.jpg" alt="Demon Slayer">
-          <h3>Demon Slayer</h3>
-        </a>
-      </div>
-
-      <!-- One Piece -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece" target="_blank">
-         <img src="one-piece.jpg" alt="One Piece"> 
-          <h3>One Piece</h3>
-        </a>
-      </div>
-
-      <!-- Death Note -->
-      <div class="card" data-category="action">
-        <a href="https://www.netflix.com/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg" alt="Death Note">
-          <h3>Death Note</h3>
-        </a>
-      </div>
-
-      <!-- Solo Leveling -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/" target="_blank">
-          <img src="solo.jpg" alt="Solo Leveling">
-          <h3>Solo Leveling</h3>
-        </a>
-      </div>
-
-      <!-- Jujutsu Kaisen -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
-          <h3>Jujutsu Kaisen</h3>
-        </a>
-      </div>
-
-      <!-- Bleach -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png" alt="Bleach">
-          <h3>Bleach</h3>
-        </a>
-      </div>
-
-      <!-- Dragon Ball -->
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/" target="_blank">
-          <img src="dragon-ball.jpg" alt="Dragon Ball">
-          <h3>Dragon Ball</h3>
-        </a>
-      </div>
-
-      <!-- Horimiya -->
-      <div class="card" data-category="romance">
-        <a href="https://www.crunchyroll.com/" target="_blank">
-          <img src="horimiya.jpg" alt="Horimiya">
-          <h3>Horimiya</h3>
-        </a>
-      </div>
-
-      <!-- Weathering With You -->
-      <div class="card" data-category="romance">
-        <a href="https://www.netflix.com/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg" alt="Weathering With You">
-          <h3>Weathering With You</h3>
-        </a>
-      </div>
-
-      <!-- EXTRA ANIME ADDED -->
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Tokyo%20Ghoul" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/1498/134443.jpg" alt="Tokyo Ghoul">
-          <h3>Tokyo Ghoul</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Chainsaw%20Man" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/1806/126216.jpg" alt="Chainsaw Man">
-          <h3>Chainsaw Man</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Black%20Clover" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" alt="Black Clover">
-          <h3>Black Clover</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Haikyuu" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/7/76014.jpg" alt="Haikyuu">
-          <h3>Haikyuu</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Spy%20x%20Family" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" alt="Spy x Family">
-          <h3>Spy x Family</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Steins%20Gate" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/5/73199.jpg" alt="Steins;Gate">
-          <h3>Steins;Gate</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%20Brotherhood" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="FMAB">
-          <h3>Fullmetal Alchemist: Brotherhood</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=My%20Hero%20Academia" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/10/78745.jpg" alt="MHA">
-          <h3>My Hero Academia</h3>
-        </a>
-      </div>
-
-      <div class="card" data-category="action">
-        <a href="https://www.crunchyroll.com/search?q=Tokyo%20Revengers" target="_blank">
-          <img src="https://cdn.myanimelist.net/images/anime/1839/122012.jpg" alt="Tokyo Revengers">
-          <h3>Tokyo Revengers</h3>
-        </a>
-      </div>
-
-    </div>
   </section>
 
   <script src="script.js"></script>
