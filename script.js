@@ -1,44 +1,35 @@
 const search = document.getElementById("search");
+const buttons = document.querySelectorAll(".category-btn");
+const cards = document.querySelectorAll(".card");
 
-search.addEventListener("keyup", () => {
+let activeCategory = "all";
 
+// Filter function (single source of truth)
+function filterCards() {
   const value = search.value.toLowerCase();
 
-  document.querySelectorAll(".card").forEach(card => {
-
+  cards.forEach(card => {
     const text = card.innerText.toLowerCase();
+    const category = card.dataset.category;
 
-    if (text.includes(value)) {
+    const matchSearch = text.includes(value);
+    const matchCategory = activeCategory === "all" || category === activeCategory;
+
+    if (matchSearch && matchCategory) {
       card.style.display = "block";
     } else {
       card.style.display = "none";
     }
-
   });
+}
 
-});
+// Search
+search.addEventListener("keyup", filterCards);
 
-const buttons = document.querySelectorAll(".category-btn");
-
+// Category buttons
 buttons.forEach(button => {
-
   button.addEventListener("click", () => {
-
-    const category = button.dataset.category;
-
-    document.querySelectorAll(".card").forEach(card => {
-
-      if (
-        category === "all" ||
-        card.dataset.category === category
-      ) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-
-    });
-
+    activeCategory = button.dataset.category;
+    filterCards();
   });
-
 });
