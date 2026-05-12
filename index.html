@@ -1,190 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shadow Anime</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header>
-
     <h1>Shadow Anime</h1>
 
-    <input
-      type="text"
-      id="search"
-      placeholder="Search anime..."
-    >
+    <input type="text" id="search" placeholder="Search anime...">
 
-    <div class="categories">
-
-      <button class="category-btn" data-category="all">
-        All
-      </button>
-
-      <button class="category-btn" data-category="action">
-        Action
-      </button>
-
-      <button class="category-btn" data-category="romance">
-        Romance
-      </button>
-
+    <div class="buttons">
+      <button class="category-btn" data-category="all">All</button>
+      <button class="category-btn" data-category="action">Action</button>
+      <button class="category-btn" data-category="romance">Romance</button>
     </div>
-
   </header>
 
   <section>
-
     <h2>Trending Anime</h2>
 
     <div class="anime-container">
 
       <!-- Naruto -->
-      <a
-        href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/13/17405.jpg"
-          alt="Naruto"
-        >
-
-        <h3>Naruto</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto">
+          <h3>Naruto</h3>
+        </a>
+      </div>
 
       <!-- Attack on Titan -->
-      <a
-        href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/10/47347.jpg"
-          alt="Attack on Titan"
-        >
-
-        <h3>Attack on Titan</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Shingeki_no_Kyojin_manga_volume_1.jpg" alt="Attack on Titan">
+          <h3>Attack on Titan</h3>
+        </a>
+      </div>
 
       <!-- Your Name -->
-      <a
-        href="https://www.netflix.com/title/80161371"
-        target="_blank"
-        class="card"
-        data-category="romance"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/5/87048.jpg"
-          alt="Your Name"
-        >
-
-        <h3>Your Name</h3>
-
-      </a>
+      <div class="card" data-category="romance">
+        <a href="https://www.netflix.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png" alt="Your Name">
+          <h3>Your Name</h3>
+        </a>
+      </div>
 
       <!-- Demon Slayer -->
-      <a
-        href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg"
-          alt="Demon Slayer"
-        >
-
-        <h3>Demon Slayer</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Kimetsu_no_Yaiba_Volume_1.png" alt="Demon Slayer">
+          <h3>Demon Slayer</h3>
+        </a>
+      </div>
 
       <!-- One Piece -->
-      <a
-        href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/6/73245.jpg"
-          alt="One Piece"
-        >
-
-        <h3>One Piece</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/65/One_Piece_Logo.svg" alt="One Piece">
+          <h3>One Piece</h3>
+        </a>
+      </div>
 
       <!-- Death Note -->
-      <a
-        href="https://www.netflix.com/title/70204970"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img
-          src="https://cdn.myanimelist.net/images/anime/9/9453.jpg"
-          alt="Death Note"
-        >
-
-        <h3>Death Note</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.netflix.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg" alt="Death Note">
+          <h3>Death Note</h3>
+        </a>
+      </div>
 
       <!-- Solo Leveling -->
-      <a
-        href="https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
-
-        <img src="solo.jpg" alt="Solo Leveling">
-
-        <h3>Solo Leveling</h3>
-
-      </a>
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/" target="_blank">
+          <img src="solo-leveling.jpg" alt="Solo Leveling">
+          <h3>Solo Leveling</h3>
+        </a>
+      </div>
 
       <!-- Jujutsu Kaisen -->
-      <a
-        href="https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen"
-        target="_blank"
-        class="card"
-        data-category="action"
-      >
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+          <h3>Jujutsu Kaisen</h3>
+        </a>
+      </div>
 
-        <img
-          src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg"
-          alt="Jujutsu Kaisen"
-        >
+      <!-- Bleach -->
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png" alt="Bleach">
+          <h3>Bleach</h3>
+        </a>
+      </div>
 
-        <h3>Jujutsu Kaisen</h3>
+      <!-- Dragon Ball -->
+      <div class="card" data-category="action">
+        <a href="https://www.crunchyroll.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/DBZ_Logo.png" alt="Dragon Ball">
+          <h3>Dragon Ball</h3>
+        </a>
+      </div>
 
-      </a>
+      <!-- Horimiya -->
+      <div class="card" data-category="romance">
+        <a href="https://www.crunchyroll.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Horimiya_Volume_1.png" alt="Horimiya">
+          <h3>Horimiya</h3>
+        </a>
+      </div>
+
+      <!-- Weathering With You -->
+      <div class="card" data-category="romance">
+        <a href="https://www.netflix.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg" alt="Weathering With You">
+          <h3>Weathering With You</h3>
+        </a>
+      </div>
 
     </div>
-
   </section>
 
   <script src="script.js"></script>
 
 </body>
-
 </html>
