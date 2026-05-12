@@ -4,7 +4,7 @@ const cards = document.querySelectorAll(".card");
 
 let activeCategory = "all";
 
-// Filter function (single source of truth)
+// Filter function
 function filterCards() {
   const value = search.value.toLowerCase();
 
@@ -13,7 +13,8 @@ function filterCards() {
     const category = card.dataset.category;
 
     const matchSearch = text.includes(value);
-    const matchCategory = activeCategory === "all" || category === activeCategory;
+    const matchCategory =
+      activeCategory === "all" || category === activeCategory;
 
     if (matchSearch && matchCategory) {
       card.style.display = "block";
@@ -26,9 +27,13 @@ function filterCards() {
 // Search
 search.addEventListener("keyup", filterCards);
 
-// Category buttons
+// Category filter + active button UI
 buttons.forEach(button => {
   button.addEventListener("click", () => {
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
     activeCategory = button.dataset.category;
     filterCards();
   });
