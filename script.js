@@ -6,13 +6,38 @@ search.addEventListener("keyup", () => {
 
   document.querySelectorAll(".card").forEach(card => {
 
-    const title = card.innerText.toLowerCase();
+    const text = card.innerText.toLowerCase();
 
-    if (title.includes(value)) {
+    if (text.includes(value)) {
       card.style.display = "block";
     } else {
       card.style.display = "none";
     }
+
+  });
+
+});
+
+const buttons = document.querySelectorAll(".category-btn");
+
+buttons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const category = button.dataset.category;
+
+    document.querySelectorAll(".card").forEach(card => {
+
+      if (
+        category === "all" ||
+        card.dataset.category === category
+      ) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+
+    });
 
   });
 
