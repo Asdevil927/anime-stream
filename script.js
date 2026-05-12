@@ -2,39 +2,29 @@ const search = document.getElementById("search");
 const buttons = document.querySelectorAll(".category-btn");
 const cards = document.querySelectorAll(".card");
 
-let activeCategory = "all";
+let selectedCategory = "all";
+let searchText = "";
 
-// Filter function
 function filterCards() {
-  const value = search.value.toLowerCase();
-
   cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
-    const category = card.dataset.category;
+    const title = card.querySelector("h3").innerText.toLowerCase();
+    const category = card.getAttribute("data-category");
 
-    const matchSearch = text.includes(value);
-    const matchCategory =
-      activeCategory === "all" || category === activeCategory;
+    const matchCategory = selectedCategory === "all" || category === selectedCategory;
+    const matchSearch = title.includes(searchText);
 
-    if (matchSearch && matchCategory) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+    card.style.display = (matchCategory && matchSearch) ? "block" : "none";
   });
 }
 
-// Search
-search.addEventListener("keyup", filterCards);
+search.addEventListener("input", (e) => {
+  searchText = e.target.value.toLowerCase();
+  filterCards();
+});
 
-// Category filter + active button UI
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-
-    buttons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
-
-    activeCategory = button.dataset.category;
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    selectedCategory = btn.getAttribute("data-category");
     filterCards();
   });
 });
