@@ -75,6 +75,14 @@ h1{
   transform:scale(1.05);
 }
 
+/* ACTIVE BUTTON */
+.category-btn.active{
+  background:#fff;
+  color:#ff004f;
+  font-weight:bold;
+  box-shadow:0 0 10px rgba(255,0,79,0.6);
+}
+
 section{
   padding:30px 20px;
 }
@@ -94,13 +102,16 @@ section h2{
   background:#1a1a1a;
   border-radius:15px;
   overflow:hidden;
-  transition:0.3s;
+  transition:0.3s ease;
   animation:fadeIn 0.6s ease;
+  opacity:1;
+  transform:scale(1);
 }
 
+/* HOVER EFFECT */
 .card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 0 20px rgba(255,0,79,0.5);
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 0 25px rgba(255,0,79,0.6);
 }
 
 .card a{
@@ -120,22 +131,20 @@ section h2{
   font-size:22px;
 }
 
+/* FADE ANIMATION */
 @keyframes fadeIn{
-
   from{
     opacity:0;
     transform:translateY(20px);
   }
-
   to{
     opacity:1;
     transform:translateY(0);
   }
-
 }
 
+/* RESPONSIVE */
 @media(max-width:768px){
-
   h1{
     font-size:32px;
   }
@@ -152,5 +161,4 @@ section h2{
   .card img{
     height:260px;
   }
-
 }
