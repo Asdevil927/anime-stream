@@ -182,7 +182,21 @@ function renderAnime() {
   <img src="${anime.img}" alt="${anime.title}">
   <h3>${anime.title}</h3>
 `;
+    
+card.addEventListener("click", () => {
 
+  document.getElementById("animeModal").style.display = "block";
+
+  document.getElementById("modalImg").src = anime.img;
+
+  document.getElementById("modalTitle").innerText = anime.title;
+
+  document.getElementById("modalCategory").innerText =
+    "Category: " + anime.category;
+
+  document.getElementById("watchBtn").href = anime.link;
+
+});
     container.appendChild(card);
   });
 }
@@ -212,3 +226,16 @@ buttons.forEach(btn => {
 });
 
 renderAnime();
+const modal = document.getElementById("animeModal");
+
+const closeBtn = document.querySelector(".close-btn");
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
