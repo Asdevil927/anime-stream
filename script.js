@@ -179,11 +179,9 @@ function renderAnime() {
     card.classList.add("card");
 
     card.innerHTML = `
-      <a href="${anime.link}" target="_blank">
-        <img src="${anime.img}" alt="${anime.title}">
-        <h3>${anime.title}</h3>
-      </a>
-    `;
+  <img src="${anime.img}" alt="${anime.title}">
+  <h3>${anime.title}</h3>
+`;
 
     container.appendChild(card);
   });
