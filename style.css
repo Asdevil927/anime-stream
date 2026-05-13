@@ -1,175 +1,156 @@
-/* RESET */
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
-
-body {
-  background: #0f0f0f;
+body{
+  background: #050505;
   color: white;
   font-family: Arial, sans-serif;
 }
 
 /* HEADER */
 
-header {
-  background: #151515;
+header{
+  background: #111;
   padding: 20px;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-/* LOGO AREA */
-
-.logo-area {
+.logo-area{
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 15px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.logo {
-  width: 55px;
-  height: 55px;
+.logo{
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.logo-area h1 {
+.logo-area h1{
+  color: #ff004f;
   font-size: 32px;
-  color: #ff003c;
 }
 
-/* SEARCH BAR */
+/* SEARCH */
 
-#search {
+#search{
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   padding: 12px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none;
-  margin-top: 10px;
-  font-size: 16px;
-  background: #222;
+  background: #1b1b1b;
   color: white;
+  margin-bottom: 20px;
 }
 
 /* BUTTONS */
 
-.buttons {
-  margin-top: 18px;
+.buttons{
   display: flex;
   justify-content: center;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
-.category-btn {
+.category-btn{
   padding: 10px 18px;
   border: none;
   border-radius: 8px;
-  background: #2a2a2a;
+  background: #222;
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 15px;
 }
 
-.category-btn:hover {
-  background: #ff003c;
+.category-btn:hover{
+  background: #ff004f;
 }
 
-/* ACTIVE BUTTON */
-
-.category-btn.active {
-  background: #ff003c;
+.category-btn.active{
+  background: #ff004f;
   color: white;
 }
 
 /* SECTION */
 
-section {
-  padding: 25px;
+section{
+  padding: 20px;
 }
 
-section h2 {
+section h2{
+  color: #ff004f;
   margin-bottom: 20px;
-  font-size: 28px;
-  color: #ff003c;
+  font-size: 30px;
 }
 
-/* ANIME CONTAINER */
+/* ANIME GRID */
 
-.anime-container {
+.anime-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 /* CARD */
 
-.card {
-  background: #1b1b1b;
-  border-radius: 14px;
+.card{
+  background: #111;
+  border-radius: 12px;
   overflow: hidden;
-  transition: 0.3s;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card:hover{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255,0,79,0.5);
 }
 
-/* CARD IMAGE */
+/* IMAGE */
 
-.card img {
+.card img{
   width: 100%;
-  height: 320px;
+  height: 260px;
   object-fit: cover;
 }
 
-/* CARD TITLE */
+/* TITLE */
 
-.card h3 {
-  padding: 15px;
+.card h3{
   text-align: center;
-  font-size: 18px;
+  padding: 12px;
   color: white;
+  font-size: 18px;
 }
 
 /* LINKS */
 
-.card a {
+.card a{
   text-decoration: none;
-  color: white;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
-@media (max-width: 768px) {
+@media(max-width: 600px){
 
-  .logo-area h1 {
+  .logo-area h1{
+    font-size: 26px;
+  }
+
+  section h2{
     font-size: 24px;
   }
 
-  #search {
-    width: 100%;
-  }
-
-  .anime-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-
-  .card img {
-    height: 250px;
+  .card img{
+    height: 220px;
   }
 
 }
