@@ -5,6 +5,7 @@ const animeData = [
     category: "action",
     img: "naruto.jpg",
     link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto"
+  description: "A ninja story full of action and friendship."
   },
 
   {
@@ -12,6 +13,7 @@ const animeData = [
     category: "action",
     img: "aot.jpg",
     link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan"
+  description: "A ninja story full of action and friendship."
   },
 
   {
@@ -19,6 +21,7 @@ const animeData = [
     category: "romance",
     img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
     link: "https://www.netflix.com/"
+ description: "A ninja story full of action and friendship."
   },
 
   {
@@ -26,6 +29,7 @@ const animeData = [
     category: "action",
     img: "demon-slayer.jpg",
     link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba"
+description: "A ninja story full of action and friendship."
   },
 
   {
@@ -33,6 +37,7 @@ const animeData = [
     category: "action",
     img: "one-piece.jpg",
     link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece"
+description: "A ninja story full of action and friendship."
   },
 
   {
@@ -40,6 +45,7 @@ const animeData = [
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
     link: "https://www.netflix.com/"
+ description: "A ninja story full of action and friendship."
   },
 
   {
@@ -47,6 +53,7 @@ const animeData = [
     category: "action",
     img: "solo.jpg",
     link: "https://www.crunchyroll.com/"
+description: "A ninja story full of action and friendship."
   },
 
   {
@@ -54,6 +61,7 @@ const animeData = [
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
     link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen"
+ description: "A ninja story full of action and friendship."
   },
 
   {
@@ -61,6 +69,7 @@ const animeData = [
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png",
     link: "https://www.crunchyroll.com/"
+ description: "A ninja story full of action and friendship."
   },
 
   {
@@ -68,6 +77,7 @@ const animeData = [
     category: "action",
     img: "dragon-ball.jpg",
     link: "https://www.crunchyroll.com/"
+ description: "A ninja story full of action and friendship."
   },
 
   {
@@ -75,6 +85,7 @@ const animeData = [
     category: "romance",
     img: "horimiya.jpg",
     link: "https://www.crunchyroll.com/"
+description: "A ninja story full of action and friendship."
   },
 
   {
@@ -82,6 +93,7 @@ const animeData = [
     category: "romance",
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
     link: "https://www.netflix.com/"
+description: "A ninja story full of action and friendship."
   }
 
 ];
