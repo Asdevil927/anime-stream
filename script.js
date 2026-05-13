@@ -82,69 +82,6 @@ const animeData = [
     category: "romance",
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
     link: "https://www.netflix.com/"
-  },
-
-  {
-    title: "Tokyo Ghoul",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1498/134443.jpg",
-    link: "https://www.crunchyroll.com/search?q=Tokyo%20Ghoul"
-  },
-
-  {
-    title: "Chainsaw Man",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1806/126216.jpg",
-    link: "https://www.crunchyroll.com/search?q=Chainsaw%20Man"
-  },
-
-  {
-    title: "Black Clover",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/2/88336.jpg",
-    link: "https://www.crunchyroll.com/search?q=Black%20Clover"
-  },
-
-  {
-    title: "Haikyuu",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/7/76014.jpg",
-    link: "https://www.crunchyroll.com/search?q=Haikyuu"
-  },
-
-  {
-    title: "Spy x Family",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1441/122795.jpg",
-    link: "https://www.crunchyroll.com/search?q=Spy%20x%20Family"
-  },
-
-  {
-    title: "Steins;Gate",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/5/73199.jpg",
-    link: "https://www.crunchyroll.com/search?q=Steins%20Gate"
-  },
-
-  {
-    title: "Fullmetal Alchemist",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-    link: "https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%20Brotherhood"
-  },
-
-  {
-    title: "My Hero Academia",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
-    link: "https://www.crunchyroll.com/search?q=My%20Hero%20Academia"
-  },
-
-  {
-    title: "Tokyo Revengers",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1839/122012.jpg",
-    link: "https://www.crunchyroll.com/search?q=Tokyo%20Revengers"
   }
 
 ];
@@ -170,6 +107,7 @@ function renderAnime() {
       anime.title.toLowerCase().includes(searchText);
 
     return matchCategory && matchSearch;
+
   });
 
   filteredAnime.forEach(anime => {
@@ -179,26 +117,29 @@ function renderAnime() {
     card.classList.add("card");
 
     card.innerHTML = `
-  <img src="${anime.img}" alt="${anime.title}">
-  <h3>${anime.title}</h3>
-`;
-    
-card.addEventListener("click", () => {
+      <img src="${anime.img}" alt="${anime.title}">
+      <h3>${anime.title}</h3>
+    `;
 
-  document.getElementById("animeModal").style.display = "block";
+    card.addEventListener("click", () => {
 
-  document.getElementById("modalImg").src = anime.img;
+      document.getElementById("animeModal").style.display = "block";
 
-  document.getElementById("modalTitle").innerText = anime.title;
+      document.getElementById("modalImg").src = anime.img;
 
-  document.getElementById("modalCategory").innerText =
-    "Category: " + anime.category;
+      document.getElementById("modalTitle").innerText = anime.title;
 
-  document.getElementById("watchBtn").href = anime.link;
+      document.getElementById("modalCategory").innerText =
+        "Category: " + anime.category;
 
-});
+      document.getElementById("watchBtn").href = anime.link;
+
+    });
+
     container.appendChild(card);
+
   });
+
 }
 
 search.addEventListener("input", (e) => {
@@ -225,17 +166,24 @@ buttons.forEach(btn => {
 
 });
 
-renderAnime();
 const modal = document.getElementById("animeModal");
 
 const closeBtn = document.querySelector(".close-btn");
 
 closeBtn.addEventListener("click", () => {
+
   modal.style.display = "none";
+
 });
 
 window.addEventListener("click", (e) => {
+
   if (e.target === modal) {
+
     modal.style.display = "none";
+
   }
+
 });
+
+renderAnime();
