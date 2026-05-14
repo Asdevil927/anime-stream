@@ -158,6 +158,85 @@ const animeData = [
   img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
   link: "https://www.netflix.com/",
   description: "A beautiful film about guilt and redemption."
+},
+  {
+  title: "Hunter x Hunter",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
+  link: "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+  description: "Adventure, battles and strategy."
+},
+
+{
+  title: "Fire Force",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1465/97346.jpg",
+  link: "https://www.crunchyroll.com/search?q=Fire%20Force",
+  description: "Fire-powered soldiers fight infernals."
+},
+
+{
+  title: "Parasyte",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
+  link: "https://www.crunchyroll.com/search?q=Parasyte",
+  description: "Alien parasites invade humanity."
+},
+
+{
+  title: "Akame ga Kill",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
+  link: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill",
+  description: "Assassins versus corruption."
+},
+
+{
+  title: "The Promised Neverland",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1656/94243.jpg",
+  link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
+  description: "Children uncover terrifying secrets."
+},
+
+{
+  title: "Classroom of the Elite",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
+  link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
+  description: "Manipulation and mind games."
+},
+
+{
+  title: "Darling in the FranXX",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/1615/90432.jpg",
+  link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
+  description: "Mecha battles and emotional bonds."
+},
+
+{
+  title: "Toradora",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
+  link: "https://www.crunchyroll.com/search?q=Toradora",
+  description: "Chaotic high school romance."
+},
+
+{
+  title: "Your Lie in April",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
+  link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
+  description: "Music, trauma and love."
+},
+
+{
+  title: "Clannad",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/13/8498.jpg",
+  link: "https://www.crunchyroll.com/search?q=Clannad",
+  description: "Family, emotions and relationships."
 }
 ];
 
