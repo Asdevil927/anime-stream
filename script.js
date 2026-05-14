@@ -4,84 +4,96 @@ const animeData = [
     title: "Naruto",
     category: "action",
     img: "naruto.jpg",
-    link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto"
+    link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
+    description: "A ninja story full of action and friendship."
   },
 
   {
     title: "Attack on Titan",
     category: "action",
     img: "aot.jpg",
-    link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan"
+    link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    description: "Humanity fights giant Titans to survive."
   },
 
   {
     title: "Your Name",
     category: "romance",
     img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-    link: "https://www.netflix.com/"
+    link: "https://www.netflix.com/",
+    description: "A beautiful story about two strangers connected by fate."
   },
 
   {
     title: "Demon Slayer",
     category: "action",
     img: "demon-slayer.jpg",
-    link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba"
+    link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
+    description: "Tanjiro fights demons to save his sister."
   },
 
   {
     title: "One Piece",
     category: "action",
     img: "one-piece.jpg",
-    link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece"
+    link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece",
+    description: "Luffy sails to become the Pirate King."
   },
 
   {
     title: "Death Note",
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
-    link: "https://www.netflix.com/"
+    link: "https://www.netflix.com/",
+    description: "A genius student gains a deadly supernatural notebook."
   },
 
   {
     title: "Solo Leveling",
     category: "action",
     img: "solo.jpg",
-    link: "https://www.crunchyroll.com/"
+    link: "https://www.crunchyroll.com/",
+    description: "The weakest hunter becomes unstoppable."
   },
 
   {
     title: "Jujutsu Kaisen",
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-    link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen"
+    link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
+    description: "Cursed spirits and intense supernatural battles."
   },
 
   {
     title: "Bleach",
     category: "action",
     img: "https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png",
-    link: "https://www.crunchyroll.com/"
+    link: "https://www.crunchyroll.com/",
+    description: "Ichigo becomes a Soul Reaper and fights evil spirits."
   },
 
   {
     title: "Dragon Ball",
     category: "action",
     img: "dragon-ball.jpg",
-    link: "https://www.crunchyroll.com/"
+    link: "https://www.crunchyroll.com/",
+    description: "Goku trains and battles powerful enemies."
   },
 
   {
     title: "Horimiya",
     category: "romance",
     img: "horimiya.jpg",
-    link: "https://www.crunchyroll.com/"
+    link: "https://www.crunchyroll.com/",
+    description: "A wholesome high school romance story."
   },
 
   {
     title: "Weathering With You",
     category: "romance",
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
-    link: "https://www.netflix.com/"
+    link: "https://www.netflix.com/",
+    description: "A magical romance connected to the weather."
   }
 
 ];
@@ -131,6 +143,9 @@ function renderAnime() {
 
       document.getElementById("modalCategory").innerText =
         "Category: " + anime.category;
+
+      document.getElementById("modalDescription").innerText =
+        anime.description;
 
       document.getElementById("watchBtn").href = anime.link;
 
