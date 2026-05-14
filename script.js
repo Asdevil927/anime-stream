@@ -94,8 +94,71 @@ const animeData = [
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
     link: "https://www.netflix.com/",
     description: "A magical romance connected to the weather."
-  }
+  },
 
+{
+  title: "Vinland Saga",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg",
+  link: "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+  description: "A brutal Viking revenge story."
+},
+
+{
+  title: "Blue Lock",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1258/126929.jpg",
+  link: "https://www.crunchyroll.com/search?q=Blue%20Lock",
+  description: "Football, but with psychological warfare."
+},
+
+{
+  title: "Mob Psycho 100",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
+  link: "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
+  description: "Overpowered psychic kid with emotional issues."
+},
+
+{
+  title: "Code Geass",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/5/50331.jpg",
+  link: "https://www.crunchyroll.com/search?q=Code%20Geass",
+  description: "Genius rebellion and giant robots."
+},
+
+{
+  title: "Re:Zero",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
+  link: "https://www.crunchyroll.com/search?q=Re%20Zero",
+  description: "Dies repeatedly. Still has to function."
+},
+
+{
+  title: "Kaguya-sama",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/1295/106551.jpg",
+  link: "https://www.crunchyroll.com/search?q=Kaguya-sama",
+  description: "Romance through psychological combat."
+},
+
+{
+  title: "Your Lie in April",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
+  link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
+  description: "Music and emotional damage."
+},
+
+{
+  title: "A Silent Voice",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
+  link: "https://www.netflix.com/",
+  description: "A beautiful film about guilt and redemption."
+}
 ];
 
 const container = document.getElementById("animeContainer");
