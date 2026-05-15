@@ -170,7 +170,7 @@ const animeData = [
 {
   title: "Fire Force",
   category: "action",
-  img: "https://cdn.myanimelist.net/images/anime/1465/97346.jpg",
+  img: "https://upload.wikimedia.org/wikipedia/en/8/8b/Fire_Force_volume_1_cover.jpg",
   link: "https://www.crunchyroll.com/search?q=Fire%20Force",
   description: "Fire-powered soldiers fight infernals."
 },
@@ -194,7 +194,7 @@ const animeData = [
 {
   title: "The Promised Neverland",
   category: "action",
-  img: "https://cdn.myanimelist.net/images/anime/1656/94243.jpg",
+  img: "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Promised_Neverland_volume_1_cover.jpg",
   link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
   description: "Children uncover terrifying secrets."
 },
@@ -210,7 +210,7 @@ const animeData = [
 {
   title: "Darling in the FranXX",
   category: "romance",
-  img: "https://cdn.myanimelist.net/images/anime/1615/90432.jpg",
+  img: "https://upload.wikimedia.org/wikipedia/en/3/39/Darling_in_the_Franxx_volume_1_cover.jpg",
   link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
   description: "Mecha battles and emotional bonds."
 },
@@ -234,7 +234,7 @@ const animeData = [
 {
   title: "Clannad",
   category: "romance",
-  img: "https://cdn.myanimelist.net/images/anime/13/8498.jpg",
+  img: "https://upload.wikimedia.org/wikipedia/en/0/0a/Clannad_game_cover.jpg",
   link: "https://www.crunchyroll.com/search?q=Clannad",
   description: "Family, emotions and relationships."
 }
