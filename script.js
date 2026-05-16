@@ -185,7 +185,6 @@ const animeData = [
   description: "Assassins versus corruption."
 },
 
-{
 
 {
   title: "Classroom of the Elite",
@@ -211,7 +210,6 @@ const animeData = [
   description: "Music, trauma and love."
 },
 
-{
 {
   title: "Fire Force",
   category: "action",
