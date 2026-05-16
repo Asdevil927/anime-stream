@@ -205,7 +205,7 @@ const animeData = [
 {
   title: "Fire Force",
   category: "action",
-  img: "fire-force.jpg",
+  img: "Fire-Force.jpg",
   link: "https://www.crunchyroll.com/search?q=Fire%20Force",
   description: "Fire-powered soldiers fight infernals."
 },
@@ -213,7 +213,7 @@ const animeData = [
 {
   title: "The Promised Neverland",
   category: "action",
-  img: "promised-neverland.jpg",
+  img: "The Promised-Neverland.jpg",
   link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
   description: "Children uncover terrifying secrets."
 },
@@ -221,7 +221,7 @@ const animeData = [
 {
   title: "Darling in the FranXX",
   category: "romance",
-  img: "darling.jpg",
+  img: "Darling in the FranXX.jpg",
   link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
   description: "Mecha battles and emotional bonds."
 },
@@ -229,7 +229,7 @@ const animeData = [
 {
   title: "Clannad",
   category: "romance",
-  img: "clannad.jpg",
+  img: "Clannad.jpg",
   link: "https://www.crunchyroll.com/search?q=Clannad",
   description: "Family, emotions and relationships."
 }
