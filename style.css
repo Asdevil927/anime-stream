@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #050505;
+  background: linear-gradient(to bottom, #050505, #111);
   font-family: Arial, sans-serif;
   color: white;
 }
@@ -13,9 +13,13 @@ body{
 /* HEADER */
 
 header{
-  background: #111;
+  background: rgba(0,0,0,0.7);
   padding: 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 /* LOGO AREA */
@@ -51,6 +55,11 @@ header{
   background: #1e1e1e;
   color: white;
   margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+#search:focus{
+  box-shadow: 0 0 12px rgba(255,0,76,0.5);
 }
 
 /* BUTTONS */
@@ -103,16 +112,17 @@ section h2{
 /* CARD */
 
 .card{
-  background: #111;
+  background: rgba(255,255,255,0.05);
   border-radius: 12px;
   overflow: hidden;
   transition: 0.3s ease;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
 }
 
 .card:hover{
-  transform: translateY(-8px) scale(1.03);
+  transform: translateY(-10px) scale(1.04);
   box-shadow: 0 0 20px rgba(255,0,76,0.5);
 }
 
@@ -154,6 +164,7 @@ section h2{
   text-align: center;
   position: relative;
   animation: popup 0.3s ease;
+  box-shadow: 0 0 25px rgba(255,0,76,0.3);
 }
 
 @keyframes popup{
