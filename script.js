@@ -205,7 +205,7 @@ const animeData = [
 {
   title: "Fire Force",
   category: "action",
-  img: "Fire-Force.jpg",
+  img: "Fire Force.jpg",
   link: "https://www.crunchyroll.com/search?q=Fire%20Force",
   description: "Fire-powered soldiers fight infernals."
 },
@@ -213,7 +213,7 @@ const animeData = [
 {
   title: "The Promised Neverland",
   category: "action",
-  img: "The Promised-Neverland.jpg",
+  img: "The Promised Neverland.jpg",
   link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
   description: "Children uncover terrifying secrets."
 },
