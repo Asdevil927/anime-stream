@@ -145,14 +145,6 @@ const animeData = [
 },
 
 {
-  title: "Your Lie in April",
-  category: "romance",
-  img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
-  link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
-  description: "Music and emotional damage."
-},
-
-{
   title: "A Silent Voice",
   category: "romance",
   img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
