@@ -342,6 +342,17 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
 
   }
+  const exploreBtn = document.getElementById("exploreBtn");
+
+exploreBtn.addEventListener("click", () => {
+
+  document
+    .querySelector(".anime-container")
+    .scrollIntoView({
+      behavior: "smooth"
+    });
+
+});
 
 });
 
