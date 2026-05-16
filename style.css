@@ -221,6 +221,50 @@ section h2{
 #watchBtn:hover{
   background: #ff336f;
 }
+.hero {
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.8)),
+    url("https://wallpapercave.com/wp/wp9424539.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+#exploreBtn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: crimson;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#exploreBtn:hover {
+  transform: scale(1.05);
+  background: #ff1744;
+}
 
 /* MOBILE */
 
