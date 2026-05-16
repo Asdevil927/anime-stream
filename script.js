@@ -167,13 +167,7 @@ const animeData = [
   description: "Adventure, battles and strategy."
 },
 
-{
-  title: "Fire Force",
-  category: "action",
-  img: "https://upload.wikimedia.org/wikipedia/en/8/8b/Fire_Force_volume_1_cover.jpg",
-  link: "https://www.crunchyroll.com/search?q=Fire%20Force",
-  description: "Fire-powered soldiers fight infernals."
-},
+
 
 {
   title: "Parasyte",
@@ -192,12 +186,6 @@ const animeData = [
 },
 
 {
-  title: "The Promised Neverland",
-  category: "action",
-  img: "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Promised_Neverland_volume_1_cover.jpg",
-  link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
-  description: "Children uncover terrifying secrets."
-},
 
 {
   title: "Classroom of the Elite",
@@ -205,14 +193,6 @@ const animeData = [
   img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
   link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
   description: "Manipulation and mind games."
-},
-
-{
-  title: "Darling in the FranXX",
-  category: "romance",
-  img: "https://upload.wikimedia.org/wikipedia/en/3/39/Darling_in_the_Franxx_volume_1_cover.jpg",
-  link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
-  description: "Mecha battles and emotional bonds."
 },
 
 {
@@ -232,9 +212,34 @@ const animeData = [
 },
 
 {
+{
+  title: "Fire Force",
+  category: "action",
+  img: "fire-force.jpg",
+  link: "https://www.crunchyroll.com/search?q=Fire%20Force",
+  description: "Fire-powered soldiers fight infernals."
+},
+
+{
+  title: "The Promised Neverland",
+  category: "action",
+  img: "promised-neverland.jpg",
+  link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
+  description: "Children uncover terrifying secrets."
+},
+
+{
+  title: "Darling in the FranXX",
+  category: "romance",
+  img: "darling.jpg",
+  link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
+  description: "Mecha battles and emotional bonds."
+},
+
+{
   title: "Clannad",
   category: "romance",
-  img: "https://upload.wikimedia.org/wikipedia/en/0/0a/Clannad_game_cover.jpg",
+  img: "clannad.jpg",
   link: "https://www.crunchyroll.com/search?q=Clannad",
   description: "Family, emotions and relationships."
 }
