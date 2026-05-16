@@ -236,7 +236,7 @@ const animeData = [
   {
   title: "Record of Ragnarok",
   category: "action",
-  img: "https://upload.wikimedia.org/wikipedia/en/8/8d/Record_of_Ragnarok_volume_1_cover.jpg",
+  img: "Record of Ragnarok.jpg",
   link: "https://www.crunchyroll.com/search?q=Record%20of%20Ragnarok",
   description: "Gods and humans fight legendary battles to decide humanity’s fate."
 }
