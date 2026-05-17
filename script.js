@@ -357,3 +357,27 @@ exploreBtn.addEventListener("click", () => {
 });
 
 renderAnime();
+const featuredList = [
+  "Naruto",
+  "Attack on Titan",
+  "One Piece",
+  "Demon Slayer",
+  "Jujutsu Kaisen",
+  "Tokyo Ghoul",
+  "Chainsaw Man"
+];
+
+let currentFeatured = 0;
+
+setInterval(() => {
+
+  currentFeatured++;
+
+  if (currentFeatured >= featuredList.length) {
+    currentFeatured = 0;
+  }
+
+  document.getElementById("featuredAnime").innerText =
+    featuredList[currentFeatured];
+
+}, 2500);
