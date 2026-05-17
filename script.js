@@ -273,9 +273,14 @@ function renderAnime() {
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="${anime.img}" alt="${anime.title}">
-      <h3>${anime.title}</h3>
-    `;
+  <img src="${anime.img}" alt="${anime.title}">
+
+  <h3>${anime.title}</h3>
+
+  <button class="fav-btn">
+    ❤️ Favorite
+  </button>
+`;
 
     card.addEventListener("click", () => {
 
@@ -294,7 +299,31 @@ function renderAnime() {
       document.getElementById("watchBtn").href = anime.link;
 
     });
+    
+const favBtn = card.querySelector(".fav-btn");
 
+favBtn.addEventListener("click", (e) => {
+
+  e.stopPropagation();
+
+  let favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
+  if (!favorites.includes(anime.title)) {
+
+    favorites.push(anime.title);
+
+    localStorage.setItem(
+      "favorites",
+      JSON.stringify(favorites)
+    );
+
+    favBtn.innerText = "✅ Added";
+
+  }
+
+});
+    
     container.appendChild(card);
 
   });
