@@ -283,3 +283,45 @@ section h2{
   }
 
 }
+.top-anime {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  min-width: 220px;
+  height: 120px;
+
+  background: linear-gradient(135deg,
+  crimson,
+  #111);
+
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  flex-shrink: 0;
+
+  transition: 0.3s;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}
