@@ -325,3 +325,9 @@ section h2{
 .slide:hover {
   transform: scale(1.05);
 }
+#featuredAnime {
+  color: crimson;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: 0.3s;
+}
