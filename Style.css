@@ -1,0 +1,472 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: linear-gradient(to bottom, #050505, #111);
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  background: crimson;
+  border-radius: 10px;
+}
+
+/* HEADER */
+
+header{
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* LOGO AREA */
+
+.logo-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid crimson;
+}
+
+.logo-area h1{
+  color: #ff004c;
+  font-size: 34px;
+  text-shadow: 0 0 10px rgba(255,0,76,0.5);
+}
+
+/* SEARCH */
+
+#search{
+  width: 90%;
+  max-width: 420px;
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: #1e1e1e;
+  color: white;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+#search:focus{
+  box-shadow: 0 0 15px rgba(255,0,76,0.6);
+  transform: scale(1.02);
+}
+
+/* BUTTONS */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-btn{
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #2a2a2a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.category-btn:hover{
+  background: #ff004c;
+  transform: scale(1.05);
+}
+
+.category-btn.active{
+  background: #ff004c;
+  color: white;
+  box-shadow: 0 0 12px rgba(255,0,76,0.5);
+}
+
+/* HERO SECTION */
+
+.hero{
+  height: 90vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.8)),
+    url("https://wallpaperaccess.com/full/3703013.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content{
+  animation: fadeIn 1s ease;
+}
+
+.hero-content h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.hero-content p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+#featuredAnime{
+  color: crimson;
+  margin-bottom: 20px;
+  font-size: 30px;
+  transition: 0.3s;
+  text-shadow: 0 0 15px rgba(255,0,76,0.5);
+}
+
+#exploreBtn{
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: crimson;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#exploreBtn:hover{
+  transform: scale(1.08);
+  background: #ff1744;
+  box-shadow: 0 0 18px rgba(255,0,76,0.6);
+}
+
+/* TOP ANIME */
+
+.top-anime{
+  padding: 20px;
+  overflow: hidden;
+}
+
+.top-anime h2{
+  color: crimson;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.slider{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+.slide{
+  min-width: 220px;
+  height: 120px;
+
+  background:
+    linear-gradient(135deg,
+    crimson,
+    #111);
+
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  flex-shrink: 0;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slide:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,0,76,0.5);
+}
+
+/* SECTION */
+
+section{
+  padding: 20px;
+}
+
+section h2{
+  color: #ff004c;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* ANIME CONTAINER */
+
+.anime-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+
+.card{
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.card:hover{
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 0 25px rgba(255,0,76,0.5);
+}
+
+.card img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card h3{
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+}
+
+/* FAVORITE BUTTON */
+
+.fav-btn{
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.fav-btn:hover{
+  background: #ff336f;
+  transform: scale(1.03);
+}
+
+/* MODAL */
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+}
+
+/* MODAL CONTENT */
+
+.modal-content{
+  background: #111;
+  width: 85%;
+  max-width: 400px;
+  margin: 7% auto;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  animation: popup 0.3s ease;
+  box-shadow: 0 0 25px rgba(255,0,76,0.3);
+}
+
+@keyframes popup{
+
+  from{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+@keyframes fadeIn{
+
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.modal-content img{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content h2{
+  margin-bottom: 10px;
+  color: #ff004c;
+}
+
+.modal-content p{
+  margin-bottom: 15px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.close-btn:hover{
+  color: crimson;
+  transform: rotate(90deg);
+}
+
+/* WATCH BUTTON */
+
+#watchBtn{
+  display: inline-block;
+  padding: 12px 22px;
+  background: #ff004c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#watchBtn:hover{
+  background: #ff336f;
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width: 768px){
+
+  .hero-content h1{
+    font-size: 42px;
+  }
+
+  .hero-content p{
+    font-size: 17px;
+  }
+
+  #featuredAnime{
+    font-size: 24px;
+  }
+
+  .logo-area h1{
+    font-size: 24px;
+  }
+
+  .card img{
+    height: 240px;
+  }
+
+  section h2{
+    font-size: 24px;
+  }
+
+  .slide{
+    min-width: 180px;
+    height: 100px;
+    font-size: 18px;
+  }
+
+}
+
+@media(max-width: 480px){
+
+  #search{
+    width: 100%;
+  }
+
+  .hero-content h1{
+    font-size: 34px;
+  }
+
+  .anime-container{
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .card img{
+    height: 210px;
+  }
+
+  }
