@@ -1,625 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shadow Anime</title>
-
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #050505, #111);
-      color: white;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(10px);
-      background: rgba(0,0,0,0.7);
-      padding: 15px;
-      text-align: center;
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-
-    .logo {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .logo-area h1 {
-      color: crimson;
-    }
-
-    #search {
-      width: 60%;
-      padding: 12px;
-      border-radius: 30px;
-      border: none;
-      outline: none;
-      background: #1c1c1c;
-      color: white;
-    }
-
-    .buttons {
-      margin-top: 15px;
-    }
-
-    .category-btn {
-      padding: 10px 18px;
-      border: none;
-      border-radius: 20px;
-      margin: 5px;
-      background: #1a1a1a;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .category-btn:hover,
-    .category-btn.active {
-      background: crimson;
-    }
-
-    .hero {
-      height: 90vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-        url("https://wallpapercave.com/wp/wp9424539.jpg");
-
-      background-size: cover;
-      background-position: center;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero-content h1 {
-      font-size: 55px;
-      margin-bottom: 10px;
-    }
-
-    .hero-content p {
-      font-size: 20px;
-      color: #ddd;
-      margin-bottom: 15px;
-    }
-
-    #featuredAnime {
-      color: crimson;
-      margin-bottom: 20px;
-      font-size: 30px;
-    }
-
-    #exploreBtn {
-      padding: 14px 28px;
-      border: none;
-      border-radius: 30px;
-      background: crimson;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    #exploreBtn:hover {
-      transform: scale(1.05);
-      background: #ff1744;
-    }
-
-    .top-anime {
-      padding: 20px;
-    }
-
-    .top-anime h2 {
-      margin-bottom: 15px;
-      color: crimson;
-    }
-
-    .slider {
-      display: flex;
-      gap: 15px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-    }
-
-    .slider::-webkit-scrollbar {
-      display: none;
-    }
-
-    .slide {
-      min-width: 220px;
-      height: 120px;
-      border-radius: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 22px;
-      font-weight: bold;
-      background: linear-gradient(135deg, crimson, #111);
-      flex-shrink: 0;
-      transition: 0.3s;
-    }
-
-    .slide:hover {
-      transform: scale(1.05);
-    }
-
-    section h2 {
-      padding: 20px;
-      color: crimson;
-    }
-
-    .anime-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 18px;
-      overflow: hidden;
-      transition: 0.3s;
-      cursor: pointer;
-      backdrop-filter: blur(5px);
-    }
-
-    .card:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 0 25px rgba(255,0,80,0.5);
-    }
-
-    .card img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-    }
-
-    .card h3 {
-      text-align: center;
-      padding: 12px;
-    }
-
-    .fav-btn {
-      width: 90%;
-      margin: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background: crimson;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .fav-btn:hover {
-      background: #ff1744;
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.8);
-    }
-
-    .modal-content {
-      background: #111;
-      margin: 10% auto;
-      padding: 20px;
-      width: 80%;
-      max-width: 400px;
-      border-radius: 15px;
-      text-align: center;
-      color: white;
-      animation: popup 0.3s ease;
-    }
-
-    .modal-content img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .close-btn {
-      float: right;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-    #watchBtn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: crimson;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    @keyframes popup {
-
-      from {
-        transform: scale(0.7);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-
-    }
-
-    @media (max-width: 768px) {
-
-      .hero-content h1 {
-        font-size: 38px;
-      }
-
-      #search {
-        width: 90%;
-      }
-
-      .card img {
-        height: 260px;
-      }
-
-    }
-
-  </style>
-</head>
-<body>
-
-  <header>
-
-    <div class="logo-area">
-
-      <img src="logo.jpg" alt="Logo" class="logo">
-
-      <h1>Shadow Anime</h1>
-<link rel="stylesheet" href="style.css">
-    </div>
-
-    <input type="text" id="search" placeholder="Search anime...">
-
-    <div class="buttons">
-
-      <button class="category-btn active" data-category="all">
-        All
-      </button>
-
-      <button class="category-btn" data-category="action">
-        Action
-      </button>
-
-      <button class="category-btn" data-category="romance">
-        Romance
-      </button>
-
-    </div>
-
-  </header>
-
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <h1>Welcome to Shadow Anime</h1>
-
-      <p>
-        Watch trending anime series and movies in one place.
-      </p>
-
-      <h2 id="featuredAnime">Naruto</h2>
-
-      <button id="exploreBtn">Explore Now</button>
-
-    </div>
-
-  </section>
-
-  <section class="top-anime">
-
-    <h2>Top Rated Anime</h2>
-
-    <div class="slider">
-
-      <div class="slide">Naruto</div>
-      <div class="slide">Attack on Titan</div>
-      <div class="slide">One Piece</div>
-      <div class="slide">Demon Slayer</div>
-      <div class="slide">Jujutsu Kaisen</div>
-
-    </div>
-
-  </section>
-
-  <section>
-
-    <h2>Trending Anime</h2>
-
-    <div class="anime-container" id="animeContainer"></div>
-
-  </section>
-
-  <div id="animeModal" class="modal">
-
-    <div class="modal-content">
-
-      <span class="close-btn">&times;</span>
-
-      <img id="modalImg" alt="Anime Image">
-
-      <h2 id="modalTitle"></h2>
-
-      <p id="modalCategory"></p>
-
-      <p id="modalDescription"></p>
-
-      <a id="watchBtn" target="_blank">
-        Watch Now
-      </a>
-
-    </div>
-
-  </div>
-
-  <script>
-
-    const animeData = [
-
-      {
-        title: "Naruto",
-        category: "action",
-        img: "naruto.jpg",
-        link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
-        description: "A ninja story full of action and friendship."
-      },
-
-      {
-        title: "Attack on Titan",
-        category: "action",
-        img: "aot.jpg",
-        link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-        description: "Humanity fights against giant Titans."
-      },
-
-      {
-        title: "Your Name",
-        category: "romance",
-        img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-        link: "https://www.netflix.com/",
-        description: "A beautiful supernatural love story."
-      },
-
-      {
-        title: "Demon Slayer",
-        category: "action",
-        img: "demon-slayer.jpg",
-        link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
-        description: "Tanjiro fights demons to save his sister."
-      },
-
-      {
-        title: "One Piece",
-        category: "action",
-        img: "one-piece.jpg",
-        link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece",
-        description: "Pirates searching for the legendary One Piece."
-      },
-
-      {
-        title: "Jujutsu Kaisen",
-        category: "action",
-        img: "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-        link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
-        description: "Sorcerers battle deadly curses."
-      }
-
-    ];
-
-    const container = document.getElementById("animeContainer");
-    const search = document.getElementById("search");
-    const buttons = document.querySelectorAll(".category-btn");
-
-    let selectedCategory = "all";
-    let searchText = "";
-
-    function renderAnime() {
-
-      container.innerHTML = "";
-
-      const filteredAnime = animeData.filter(anime => {
-
-        const matchCategory =
-          selectedCategory === "all" ||
-          anime.category === selectedCategory;
-
-        const matchSearch =
-          anime.title.toLowerCase().includes(searchText);
-
-        return matchCategory && matchSearch;
-
-      });
-
-      filteredAnime.forEach(anime => {
-
-        const card = document.createElement("div");
-
-        card.classList.add("card");
-
-        card.innerHTML = `
-          <img src="${anime.img}" alt="${anime.title}">
-
-          <h3>${anime.title}</h3>
-
-          <button class="fav-btn">
-            ❤️ Favorite
-          </button>
-        `;
-
-        card.addEventListener("click", () => {
-
-          document.getElementById("animeModal").style.display = "block";
-
-          document.getElementById("modalImg").src = anime.img;
-
-          document.getElementById("modalTitle").innerText = anime.title;
-
-          document.getElementById("modalCategory").innerText =
-            "Category: " + anime.category;
-
-          document.getElementById("modalDescription").innerText =
-            anime.description;
-
-          document.getElementById("watchBtn").href = anime.link;
-
-        });
-
-        const favBtn = card.querySelector(".fav-btn");
-
-        favBtn.addEventListener("click", (e) => {
-
-          e.stopPropagation();
-
-          let favorites =
-            JSON.parse(localStorage.getItem("favorites")) || [];
-
-          if (!favorites.includes(anime.title)) {
-
-            favorites.push(anime.title);
-
-            localStorage.setItem(
-              "favorites",
-              JSON.stringify(favorites)
-            );
-
-            favBtn.innerText = "✅ Added";
-
-          }
-
-        });
-
-        container.appendChild(card);
-
-      });
-
-    }
-
-    search.addEventListener("input", (e) => {
-
-      searchText = e.target.value.toLowerCase();
-
-      renderAnime();
-
-    });
-
-    buttons.forEach(btn => {
-
-      btn.addEventListener("click", () => {
-
-        buttons.forEach(b => b.classList.remove("active"));
-
-        btn.classList.add("active");
-
-        selectedCategory = btn.dataset.category;
-
-        renderAnime();
-
-      });
-
-    });
-
-    const modal = document.getElementById("animeModal");
-
-    const closeBtn = document.querySelector(".close-btn");
-
-    closeBtn.addEventListener("click", () => {
-
-      modal.style.display = "none";
-
-    });
-
-    window.addEventListener("click", (e) => {
-
-      if (e.target === modal) {
-
-        modal.style.display = "none";
-
-      }
-
-    });
-
-    const exploreBtn = document.getElementById("exploreBtn");
-
-    exploreBtn.addEventListener("click", () => {
-
-      document
-        .querySelector(".anime-container")
-        .scrollIntoView({
-          behavior: "smooth"
-        });
-
-    });
-
-    const featuredList = [
-      "Naruto",
-      "Attack on Titan",
-      "One Piece",
-      "Demon Slayer",
-      "Jujutsu Kaisen"
-    ];
-
-    let currentFeatured = 0;
-
-    setInterval(() => {
-
-      currentFeatured++;
-
-      if (currentFeatured >= featuredList.length) {
-        currentFeatured = 0;
-      }
-
-      document.getElementById("featuredAnime").innerText =
-        featuredList[currentFeatured];
-
-    }, 2500);
-
-    renderAnime();
-
-  <script src="script.js"></script>
-
-</body>
-</html>
-
-</body>
-</html>
+<!DOCTYPE html>      <html lang="en">      
+<head>      
+  <meta charset="UTF-8" />      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>      
+  <title>Shadow Anime</title>        <link rel="stylesheet" href="style.css">      
+</head>      
+<body>        <header>      <!-- LOGO AREA -->      
+<div class="logo-area">      
+  
+  <img      
+    src="logo.jpg"      
+    alt="Logo"      
+    class="logo"      
+  >      
+  
+  <h1>Shadow Anime</h1>      
+  
+</div>      
+  
+<!-- SEARCH -->      
+<input      
+  type="text"      
+  id="search"      
+  placeholder="Search anime..."      
+>      
+  
+<!-- CATEGORY BUTTONS -->      
+<div class="buttons">      
+  
+  <button      
+    class="category-btn active"      
+    data-category="all"      
+  >      
+    All      
+  </button>      
+  
+  <button      
+    class="category-btn"      
+    data-category="action"      
+  >      
+    Action      
+  </button>      
+  
+  <button      
+    class="category-btn"      
+    data-category="romance"      
+  >      
+    Romance      
+  </button>      
+  
+</div>
+
+  </header>      
+  <!-- TRENDING SECTION -->   
+  <section class="hero">    
+    <div class="hero-content"> 
+      <h1>Welcome to Shadow Anime</h1>      
+  
+<p>      
+  Watch trending anime series and movies in one place.      
+</p>
+
+<h2 id="featuredAnime">Naruto</h2>      <button id="exploreBtn">Explore Now</button>
+
+  </div>  
+  </section>    
+  <section class="top-anime">   
+    <h2>Top Rated Anime</h2>   
+    <div class="slider">     
+      <div class="slide">Naruto</div>      
+<div class="slide">Attack on Titan</div>      
+<div class="slide">One Piece</div>      
+<div class="slide">Demon Slayer</div>      
+<div class="slide">Jujutsu Kaisen</div>
+
+  </div>  
+  </section>    
+  <section>     
+    <h2>Trending Anime</h2>      
+  
+<!-- DYNAMIC ANIME CONTAINER -->      
+<div      
+  class="anime-container"      
+  id="animeContainer"      
+></div>
+
+  </section>   
+  <!-- MODAL -->   
+  <div id="animeModal" class="modal">      <div class="modal-content">      
+  
+  <span class="close-btn">&times;</span>      
+  
+  <img id="modalImg" alt="Anime Image">      
+  
+  <h2 id="modalTitle"></h2>      
+  
+  <p id="modalCategory"></p>      
+  
+  <p id="modalDescription"></p>      
+  
+  <a      
+    id="watchBtn"      
+    target="_blank"      
+  >      
+    Watch Now      
+  </a>      
+  
+</div>
+
+  </div>  
+  <!-- JS --> 
+  <script src="script.js"></script>      </body>      
+</html>  
