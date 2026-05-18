@@ -96,166 +96,155 @@ const animeData = [
     description: "A magical romance connected to the weather."
   },
 
-  {
-    title: "Vinland Saga",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg",
-    link: "https://www.crunchyroll.com/search?q=Vinland%20Saga",
-    description: "A brutal Viking revenge story."
-  },
+{
+  title: "Vinland Saga",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg",
+  link: "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+  description: "A brutal Viking revenge story."
+},
 
-  {
-    title: "Blue Lock",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1258/126929.jpg",
-    link: "https://www.crunchyroll.com/search?q=Blue%20Lock",
-    description: "Football with psychological warfare."
-  },
+{
+  title: "Blue Lock",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1258/126929.jpg",
+  link: "https://www.crunchyroll.com/search?q=Blue%20Lock",
+  description: "Football, but with psychological warfare."
+},
 
-  {
-    title: "Mob Psycho 100",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
-    link: "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
-    description: "Overpowered psychic kid trying to live normally."
-  },
+{
+  title: "Mob Psycho 100",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
+  link: "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
+  description: "Overpowered psychic kid with emotional issues."
+},
 
-  {
-    title: "Code Geass",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/5/50331.jpg",
-    link: "https://www.crunchyroll.com/search?q=Code%20Geass",
-    description: "Strategic rebellion and giant robots."
-  },
+{
+  title: "Code Geass",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/5/50331.jpg",
+  link: "https://www.crunchyroll.com/search?q=Code%20Geass",
+  description: "Genius rebellion and giant robots."
+},
 
-  {
-    title: "Re:Zero",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
-    link: "https://www.crunchyroll.com/search?q=Re%20Zero",
-    description: "A boy trapped in a deadly time loop."
-  },
+{
+  title: "Re:Zero",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
+  link: "https://www.crunchyroll.com/search?q=Re%20Zero",
+  description: "Dies repeatedly. Still has to function."
+},
 
-  {
-    title: "Kaguya-sama",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/1295/106551.jpg",
-    link: "https://www.crunchyroll.com/search?q=Kaguya-sama",
-    description: "Romance through mind games."
-  },
+{
+  title: "Kaguya-sama",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/1295/106551.jpg",
+  link: "https://www.crunchyroll.com/search?q=Kaguya-sama",
+  description: "Romance through psychological combat."
+},
 
+{
+  title: "A Silent Voice",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
+  link: "https://www.netflix.com/",
+  description: "A beautiful film about guilt and redemption."
+},
   {
-    title: "A Silent Voice",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
-    link: "https://www.netflix.com/",
-    description: "A story about guilt and redemption."
-  },
+  title: "Hunter x Hunter",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
+  link: "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+  description: "Adventure, battles and strategy."
+},
 
+
+
+{
+  title: "Parasyte",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
+  link: "https://www.crunchyroll.com/search?q=Parasyte",
+  description: "Alien parasites invade humanity."
+},
+
+{
+  title: "Akame ga Kill",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
+  link: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill",
+  description: "Assassins versus corruption."
+},
+
+
+{
+  title: "Classroom of the Elite",
+  category: "action",
+  img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
+  link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
+  description: "Manipulation and mind games."
+},
+
+{
+  title: "Toradora",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
+  link: "https://www.crunchyroll.com/search?q=Toradora",
+  description: "Chaotic high school romance."
+},
+
+{
+  title: "Your Lie in April",
+  category: "romance",
+  img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
+  link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
+  description: "Music, trauma and love."
+},
+
+{
+  title: "Fire Force",
+  category: "action",
+  img: "Fire Force.jpg",
+  link: "https://www.crunchyroll.com/search?q=Fire%20Force",
+  description: "Fire-powered soldiers fight infernals."
+},
+
+{
+  title: "The Promised Neverland",
+  category: "action",
+  img: "The Promised Neverland.jpg",
+  link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
+  description: "Children uncover terrifying secrets."
+},
+
+{
+  title: "Darling in the FranXX",
+  category: "romance",
+  img: "Darling in the FranXX.jpg",
+  link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
+  description: "Mecha battles and emotional bonds."
+},
+
+{
+  title: "Clannad",
+  category: "romance",
+  img: "Clannad.jpg",
+  link: "https://www.crunchyroll.com/search?q=Clannad",
+  description: "Family, emotions and relationships."
+},
   {
-    title: "Hunter x Hunter",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
-    link: "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
-    description: "Adventure, strategy and powerful battles."
-  },
-
-  {
-    title: "Parasyte",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
-    link: "https://www.crunchyroll.com/search?q=Parasyte",
-    description: "Alien parasites invade humanity."
-  },
-
-  {
-    title: "Akame ga Kill",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
-    link: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill",
-    description: "Assassins fighting corruption."
-  },
-
-  {
-    title: "Classroom of the Elite",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
-    link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
-    description: "Manipulation and elite school politics."
-  },
-
-  {
-    title: "Toradora",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
-    link: "https://www.crunchyroll.com/search?q=Toradora",
-    description: "Chaotic high school romance."
-  },
-
-  {
-    title: "Your Lie in April",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
-    link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
-    description: "Music, emotions and heartbreak."
-  },
-
-  {
-    title: "Fire Force",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1666/102761.jpg",
-    link: "https://www.crunchyroll.com/search?q=Fire%20Force",
-    description: "Fire-powered soldiers battle infernals."
-  },
-
-  {
-    title: "The Promised Neverland",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1613/102576.jpg",
-    link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
-    description: "Children uncover terrifying secrets."
-  },
-
-  {
-    title: "Darling in the FranXX",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/1615/102179.jpg",
-    link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
-    description: "Mecha battles and emotional bonds."
-  },
-
-  {
-    title: "Clannad",
-    category: "romance",
-    img: "https://cdn.myanimelist.net/images/anime/13/22134.jpg",
-    link: "https://www.crunchyroll.com/search?q=Clannad",
-    description: "Family, emotions and relationships."
-  },
-
-  {
-    title: "Record of Ragnarok",
-    category: "action",
-    img: "https://cdn.myanimelist.net/images/anime/1730/117589.jpg",
-    link: "https://www.crunchyroll.com/search?q=Record%20of%20Ragnarok",
-    description: "Gods and humans battle for humanity’s survival."
-  }
-
+  title: "Record of Ragnarok",
+  category: "action",
+  img: "record of ragnarok.jpg",
+  link: "https://www.crunchyroll.com/search?q=Record%20of%20Ragnarok",
+  description: "Gods and humans fight legendary battles to decide humanity’s fate."
+}
 ];
 
 const container = document.getElementById("animeContainer");
 const search = document.getElementById("search");
 const buttons = document.querySelectorAll(".category-btn");
-
-const modal = document.getElementById("animeModal");
-const modalImg = document.getElementById("modalImg");
-const modalTitle = document.getElementById("modalTitle");
-const modalCategory = document.getElementById("modalCategory");
-const modalDescription = document.getElementById("modalDescription");
-const watchBtn = document.getElementById("watchBtn");
-const closeBtn = document.querySelector(".close-btn");
-
-const exploreBtn = document.getElementById("exploreBtn");
-const featuredAnime = document.getElementById("featuredAnime");
 
 let selectedCategory = "all";
 let searchText = "";
@@ -264,7 +253,7 @@ function renderAnime() {
 
   container.innerHTML = "";
 
-  const filteredAnime = animeData.filter((anime) => {
+  const filteredAnime = animeData.filter(anime => {
 
     const matchCategory =
       selectedCategory === "all" ||
@@ -277,94 +266,64 @@ function renderAnime() {
 
   });
 
-  if (filteredAnime.length === 0) {
-
-    container.innerHTML = `
-      <h2 style="text-align:center; width:100%;">
-        No Anime Found
-      </h2>
-    `;
-
-    return;
-  }
-
-  filteredAnime.forEach((anime) => {
+  filteredAnime.forEach(anime => {
 
     const card = document.createElement("div");
 
     card.classList.add("card");
 
-    let favorites =
-      JSON.parse(localStorage.getItem("favorites")) || [];
-
-    const isFavorite =
-      favorites.includes(anime.title);
-
     card.innerHTML = `
-      <img src="${anime.img}" alt="${anime.title}">
+  <img src="${anime.img}" alt="${anime.title}">
 
-      <h3>${anime.title}</h3>
+  <h3>${anime.title}</h3>
 
-      <button class="fav-btn">
-        ${isFavorite ? "✅ Added" : "❤️ Favorite"}
-      </button>
-    `;
+  <button class="fav-btn">
+    ❤️ Favorite
+  </button>
+`;
 
     card.addEventListener("click", () => {
 
-      modal.style.display = "block";
+      document.getElementById("animeModal").style.display = "block";
 
-      modalImg.src = anime.img;
+      document.getElementById("modalImg").src = anime.img;
 
-      modalTitle.innerText = anime.title;
+      document.getElementById("modalTitle").innerText = anime.title;
 
-      modalCategory.innerText =
+      document.getElementById("modalCategory").innerText =
         "Category: " + anime.category;
 
-      modalDescription.innerText =
+      document.getElementById("modalDescription").innerText =
         anime.description;
 
-      watchBtn.href = anime.link;
+      document.getElementById("watchBtn").href = anime.link;
 
     });
+    
+const favBtn = card.querySelector(".fav-btn");
 
-    const favBtn = card.querySelector(".fav-btn");
+favBtn.addEventListener("click", (e) => {
 
-    favBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
 
-      e.stopPropagation();
+  let favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
 
-      let favorites =
-        JSON.parse(localStorage.getItem("favorites")) || [];
+  if (!favorites.includes(anime.title)) {
 
-      if (!favorites.includes(anime.title)) {
+    favorites.push(anime.title);
 
-        favorites.push(anime.title);
+    localStorage.setItem(
+      "favorites",
+      JSON.stringify(favorites)
+    );
 
-        localStorage.setItem(
-          "favorites",
-          JSON.stringify(favorites)
-        );
+    favBtn.innerText = "✅ Added";
 
-        favBtn.innerText = "✅ Added";
+  }
 
-      } else {
-
-        favorites = favorites.filter(
-          fav => fav !== anime.title
-        );
-
-        localStorage.setItem(
-          "favorites",
-          JSON.stringify(favorites)
-        );
-
-        favBtn.innerText = "❤️ Favorite";
-
-      }
-
-    });
-
+});
+    
     container.appendChild(card);
 
   });
@@ -379,13 +338,11 @@ search.addEventListener("input", (e) => {
 
 });
 
-buttons.forEach((btn) => {
+buttons.forEach(btn => {
 
   btn.addEventListener("click", () => {
 
-    buttons.forEach((b) => {
-      b.classList.remove("active");
-    });
+    buttons.forEach(b => b.classList.remove("active"));
 
     btn.classList.add("active");
 
@@ -396,6 +353,10 @@ buttons.forEach((btn) => {
   });
 
 });
+
+const modal = document.getElementById("animeModal");
+
+const closeBtn = document.querySelector(".close-btn");
 
 closeBtn.addEventListener("click", () => {
 
@@ -410,8 +371,7 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
 
   }
-
-});
+  const exploreBtn = document.getElementById("exploreBtn");
 
 exploreBtn.addEventListener("click", () => {
 
@@ -423,6 +383,9 @@ exploreBtn.addEventListener("click", () => {
 
 });
 
+});
+
+renderAnime();
 const featuredList = [
   "Naruto",
   "Attack on Titan",
@@ -430,9 +393,7 @@ const featuredList = [
   "Demon Slayer",
   "Jujutsu Kaisen",
   "Tokyo Ghoul",
-  "Chainsaw Man",
-  "Blue Lock",
-  "Solo Leveling"
+  "Chainsaw Man"
 ];
 
 let currentFeatured = 0;
@@ -445,9 +406,7 @@ setInterval(() => {
     currentFeatured = 0;
   }
 
-  featuredAnime.innerText =
+  document.getElementById("featuredAnime").innerText =
     featuredList[currentFeatured];
 
 }, 2500);
-
-renderAnime();
