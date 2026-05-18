@@ -271,7 +271,7 @@ function renderAnime() {
     const card = document.createElement("div");
 
     card.classList.add("card");
-
+    
     card.innerHTML = `
   <img src="${anime.img}" alt="${anime.title}">
 
@@ -371,7 +371,10 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
 
   }
-  const exploreBtn = document.getElementById("exploreBtn");
+
+});
+
+const exploreBtn = document.getElementById("exploreBtn");
 
 exploreBtn.addEventListener("click", () => {
 
@@ -380,8 +383,6 @@ exploreBtn.addEventListener("click", () => {
     .scrollIntoView({
       behavior: "smooth"
     });
-
-});
 
 });
 
