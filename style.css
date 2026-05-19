@@ -318,3 +318,36 @@ section h2 {
 
   border-radius: 10px;
 }
+#suggestionsBox {
+
+  width: 60%;
+
+  margin: auto;
+
+  background: #111;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  z-index: 999;
+}
+
+.suggestion-item {
+
+  padding: 12px;
+
+  cursor: pointer;
+
+  color: white;
+
+  border-bottom: 1px solid #222;
+
+  transition: 0.2s;
+}
+
+.suggestion-item:hover {
+  background: crimson;
+}
