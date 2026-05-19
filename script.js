@@ -6,6 +6,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "naruto.jpg",
     link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A ninja story full of action and friendship.",
     rating: "8.9",
     episodes: "220 Episodes"
@@ -17,6 +18,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "aot.jpg",
     link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Humanity fights giant Titans to survive.",
     rating: "9.1",
     episodes: "94 Episodes"
@@ -28,6 +30,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
     link: "https://www.netflix.com/",
+   trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A beautiful story about two strangers connected by fate.",
     rating: "8.8",
     episodes: "Movie"
@@ -39,6 +42,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "demon-slayer.jpg",
     link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Tanjiro fights demons to save his sister.",
     rating: "8.7",
     episodes: "63 Episodes"
@@ -50,6 +54,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "one-piece.jpg",
     link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Luffy sails to become the Pirate King.",
     rating: "9.0",
     episodes: "1100+ Episodes"
@@ -61,6 +66,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
     link: "https://www.netflix.com/",
+   trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A genius student gains a deadly supernatural notebook.",
     rating: "9.0",
     episodes: "37 Episodes"
@@ -72,6 +78,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "solo.jpg",
     link: "https://www.crunchyroll.com/",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "The weakest hunter becomes unstoppable.",
     rating: "8.8",
     episodes: "25 Episodes"
@@ -83,6 +90,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
     link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
+   trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Cursed spirits and intense supernatural battles.",
     rating: "8.8",
     episodes: "47 Episodes"
@@ -94,6 +102,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png",
     link: "https://www.crunchyroll.com/",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Ichigo becomes a Soul Reaper and fights evil spirits.",
     rating: "8.6",
     episodes: "366 Episodes"
@@ -105,6 +114,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "dragon-ball.jpg",
     link: "https://www.crunchyroll.com/",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Goku trains and battles powerful enemies.",
     rating: "8.5",
     episodes: "153 Episodes"
@@ -116,6 +126,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "horimiya.jpg",
     link: "https://www.crunchyroll.com/",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A wholesome high school romance story.",
     rating: "8.2",
     episodes: "26 Episodes"
@@ -127,6 +138,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
     link: "https://www.netflix.com/",
+   trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A magical romance connected to the weather.",
     rating: "8.3",
     episodes: "Movie"
@@ -138,6 +150,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg",
     link: "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A brutal Viking revenge story.",
     rating: "8.8",
     episodes: "48 Episodes"
@@ -149,6 +162,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1258/126929.jpg",
     link: "https://www.crunchyroll.com/search?q=Blue%20Lock",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Football, but with psychological warfare.",
     rating: "8.3",
     episodes: "38 Episodes"
@@ -160,6 +174,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
     link: "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Overpowered psychic kid with emotional issues.",
     rating: "8.7",
     episodes: "37 Episodes"
@@ -171,6 +186,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/5/50331.jpg",
     link: "https://www.crunchyroll.com/search?q=Code%20Geass",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Genius rebellion and giant robots.",
     rating: "8.9",
     episodes: "50 Episodes"
@@ -182,6 +198,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
     link: "https://www.crunchyroll.com/search?q=Re%20Zero",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Dies repeatedly. Still has to function.",
     rating: "8.5",
     episodes: "50 Episodes"
@@ -193,6 +210,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1295/106551.jpg",
     link: "https://www.crunchyroll.com/search?q=Kaguya-sama",
+   trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Romance through psychological combat.",
     rating: "8.8",
     episodes: "37 Episodes"
@@ -204,6 +222,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
     link: "https://www.netflix.com/",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "A beautiful film about guilt and redemption.",
     rating: "8.9",
     episodes: "Movie"
@@ -215,6 +234,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
     link: "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Adventure, battles and strategy.",
     rating: "9.0",
     episodes: "148 Episodes"
@@ -226,6 +246,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
     link: "https://www.crunchyroll.com/search?q=Parasyte",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Alien parasites invade humanity.",
     rating: "8.4",
     episodes: "24 Episodes"
@@ -237,6 +258,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
     link: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Assassins versus corruption.",
     rating: "7.9",
     episodes: "24 Episodes"
@@ -248,6 +270,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
     link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Manipulation and mind games.",
     rating: "8.3",
     episodes: "38 Episodes"
@@ -259,6 +282,7 @@ const animeData = [
     genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
     link: "https://www.crunchyroll.com/search?q=Toradora",
+    trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
     description: "Chaotic high school romance.",
     rating: "8.2",
     episodes: "25 Episodes"
@@ -270,6 +294,7 @@ const animeData = [
   genre: ["Action", "Adventure"], 
   img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
   link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
+ trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Music, trauma and love.",
   rating: "8.6",
   episodes: "22 Episodes"
@@ -281,6 +306,7 @@ const animeData = [
   genre: ["Action", "Adventure"],
   img: "Fire Force.jpg",
   link: "https://www.crunchyroll.com/search?q=Fire%20Force",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Fire-powered soldiers fight infernals.",
   rating: "7.7",
   episodes: "48 Episodes"
@@ -292,6 +318,7 @@ const animeData = [
   genre: ["Action", "Adventure"],
   img: "The Promised Neverland.jpg",
   link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Children uncover terrifying secrets.",
   rating: "8.4",
   episodes: "23 Episodes"
@@ -303,6 +330,7 @@ const animeData = [
   genre: ["Action", "Adventure"],
   img: "Darling in the FranXX.jpg",
   link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Mecha battles and emotional bonds.",
   rating: "7.9",
   episodes: "24 Episodes"
@@ -314,6 +342,7 @@ const animeData = [
   genre: ["Action", "Adventure"],
   img: "Clannad.jpg",
   link: "https://www.crunchyroll.com/search?q=Clannad",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Family, emotions and relationships.",
   rating: "8.0",
   episodes: "23 Episodes"
@@ -325,6 +354,7 @@ const animeData = [
   genre: ["Action", "Adventure"],
   img: "record of ragnarok.jpg",
   link: "https://www.crunchyroll.com/search?q=Record%20of%20Ragnarok",
+  trailer: "https://www.youtube.com/embed/GwaRztMaoY0",
   description: "Gods and humans fight legendary battles to decide humanity’s fate.",
   rating: "6.9",
   episodes: "27 Episodes"
@@ -480,6 +510,7 @@ const closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", () => {
 
 modal.style.display = "none";
+  document.getElementById("trailerFrame").src = "";
 
 });
 
@@ -488,6 +519,7 @@ window.addEventListener("click", (e) => {
 if (e.target === modal) {
 
 modal.style.display = "none";
+  document.getElementById("trailerFrame").src = "";
 
 }
 
