@@ -297,6 +297,26 @@ function renderAnime() {
         anime.description;
 
       document.getElementById("watchBtn").href = anime.link;
+      
+document.getElementById("watchBtn").onclick = () => {
+
+  let watching =
+    JSON.parse(localStorage.getItem("watching")) || [];
+
+  if (!watching.includes(anime.title)) {
+
+    watching.unshift(anime.title);
+
+    localStorage.setItem(
+      "watching",
+      JSON.stringify(watching)
+    );
+
+    renderContinueWatching();
+
+  }
+
+};
 
     });
     
@@ -436,3 +456,29 @@ function renderFavorites() {
 }
 
 renderFavorites();
+
+function renderContinueWatching() {
+
+  const continueContainer =
+    document.getElementById("continueContainer");
+
+  continueContainer.innerHTML = "";
+
+  const watching =
+    JSON.parse(localStorage.getItem("watching")) || [];
+
+  watching.forEach(anime => {
+
+    const item = document.createElement("div");
+
+    item.classList.add("continue-item");
+
+    item.innerText = anime;
+
+    continueContainer.appendChild(item);
+
+  });
+
+}
+
+renderContinueWatching();
