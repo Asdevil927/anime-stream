@@ -297,6 +297,23 @@ function renderAnime() {
         anime.description;
 
       document.getElementById("watchBtn").href = anime.link;
+      document.getElementById("watchBtn").addEventListener("click", () => {
+
+  let watching =
+    JSON.parse(localStorage.getItem("watching")) || [];
+
+  if (!watching.includes(anime.title)) {
+
+    watching.unshift(anime.title);
+
+    localStorage.setItem(
+      "watching",
+      JSON.stringify(watching)
+    );
+
+  }
+
+});
 
     });
     
@@ -411,3 +428,54 @@ setInterval(() => {
 
 }, 2500);
                           
+
+function renderFavorites() {
+
+  const favoritesContainer =
+    document.getElementById("favoritesContainer");
+
+  favoritesContainer.innerHTML = "";
+
+  const favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
+  favorites.forEach(fav => {
+
+    const item = document.createElement("div");
+
+    item.classList.add("favorite-item");
+
+    item.innerText = fav;
+
+    favoritesContainer.appendChild(item);
+
+  });
+
+}
+
+renderFavorites();
+function renderContinueWatching() {
+
+  const continueContainer =
+    document.getElementById("continueContainer");
+
+  continueContainer.innerHTML = "";
+
+  const watching =
+    JSON.parse(localStorage.getItem("watching")) || [];
+
+  watching.forEach(anime => {
+
+    const item = document.createElement("div");
+
+    item.classList.add("continue-item");
+
+    item.innerText = anime;
+
+    continueContainer.appendChild(item);
+
+  });
+
+}
+
+renderContinueWatching();
