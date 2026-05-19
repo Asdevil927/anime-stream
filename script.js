@@ -481,9 +481,46 @@ container.appendChild(card);
 
 search.addEventListener("input", (e) => {
 
-searchText = e.target.value.toLowerCase();
+  searchText = e.target.value.toLowerCase();
 
-renderAnime();
+  renderAnime();
+
+  const suggestionsBox =
+    document.getElementById("suggestionsBox");
+
+  suggestionsBox.innerHTML = "";
+
+  if (searchText.length > 0) {
+
+    const matchedAnime = animeData.filter(anime =>
+      anime.title.toLowerCase().includes(searchText)
+    );
+
+    matchedAnime.forEach(anime => {
+
+      const item = document.createElement("div");
+
+      item.classList.add("suggestion-item");
+
+      item.innerText = anime.title;
+
+      item.addEventListener("click", () => {
+
+        search.value = anime.title;
+
+        searchText = anime.title.toLowerCase();
+
+        renderAnime();
+
+        suggestionsBox.innerHTML = "";
+
+      });
+
+      suggestionsBox.appendChild(item);
+
+    });
+
+  }
 
 });
 
