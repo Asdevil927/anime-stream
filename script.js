@@ -3,6 +3,7 @@ const animeData = [
   {
     title: "Naruto",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "naruto.jpg",
     link: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
     description: "A ninja story full of action and friendship.",
@@ -13,6 +14,7 @@ const animeData = [
   {
     title: "Attack on Titan",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "aot.jpg",
     link: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
     description: "Humanity fights giant Titans to survive.",
@@ -23,6 +25,7 @@ const animeData = [
   {
     title: "Your Name",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
     link: "https://www.netflix.com/",
     description: "A beautiful story about two strangers connected by fate.",
@@ -33,6 +36,7 @@ const animeData = [
   {
     title: "Demon Slayer",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "demon-slayer.jpg",
     link: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
     description: "Tanjiro fights demons to save his sister.",
@@ -43,6 +47,7 @@ const animeData = [
   {
     title: "One Piece",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "one-piece.jpg",
     link: "https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece",
     description: "Luffy sails to become the Pirate King.",
@@ -53,6 +58,7 @@ const animeData = [
   {
     title: "Death Note",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
     link: "https://www.netflix.com/",
     description: "A genius student gains a deadly supernatural notebook.",
@@ -63,6 +69,7 @@ const animeData = [
   {
     title: "Solo Leveling",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "solo.jpg",
     link: "https://www.crunchyroll.com/",
     description: "The weakest hunter becomes unstoppable.",
@@ -73,6 +80,7 @@ const animeData = [
   {
     title: "Jujutsu Kaisen",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
     link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
     description: "Cursed spirits and intense supernatural battles.",
@@ -83,6 +91,7 @@ const animeData = [
   {
     title: "Bleach",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png",
     link: "https://www.crunchyroll.com/",
     description: "Ichigo becomes a Soul Reaper and fights evil spirits.",
@@ -93,6 +102,7 @@ const animeData = [
   {
     title: "Dragon Ball",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "dragon-ball.jpg",
     link: "https://www.crunchyroll.com/",
     description: "Goku trains and battles powerful enemies.",
@@ -103,6 +113,7 @@ const animeData = [
   {
     title: "Horimiya",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "horimiya.jpg",
     link: "https://www.crunchyroll.com/",
     description: "A wholesome high school romance story.",
@@ -113,6 +124,7 @@ const animeData = [
   {
     title: "Weathering With You",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg",
     link: "https://www.netflix.com/",
     description: "A magical romance connected to the weather.",
@@ -123,6 +135,7 @@ const animeData = [
   {
     title: "Vinland Saga",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg",
     link: "https://www.crunchyroll.com/search?q=Vinland%20Saga",
     description: "A brutal Viking revenge story.",
@@ -133,6 +146,7 @@ const animeData = [
   {
     title: "Blue Lock",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1258/126929.jpg",
     link: "https://www.crunchyroll.com/search?q=Blue%20Lock",
     description: "Football, but with psychological warfare.",
@@ -143,6 +157,7 @@ const animeData = [
   {
     title: "Mob Psycho 100",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
     link: "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
     description: "Overpowered psychic kid with emotional issues.",
@@ -153,6 +168,7 @@ const animeData = [
   {
     title: "Code Geass",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/5/50331.jpg",
     link: "https://www.crunchyroll.com/search?q=Code%20Geass",
     description: "Genius rebellion and giant robots.",
@@ -163,6 +179,7 @@ const animeData = [
   {
     title: "Re:Zero",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
     link: "https://www.crunchyroll.com/search?q=Re%20Zero",
     description: "Dies repeatedly. Still has to function.",
@@ -173,6 +190,7 @@ const animeData = [
   {
     title: "Kaguya-sama",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1295/106551.jpg",
     link: "https://www.crunchyroll.com/search?q=Kaguya-sama",
     description: "Romance through psychological combat.",
@@ -183,6 +201,7 @@ const animeData = [
   {
     title: "A Silent Voice",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
     link: "https://www.netflix.com/",
     description: "A beautiful film about guilt and redemption.",
@@ -193,6 +212,7 @@ const animeData = [
   {
     title: "Hunter x Hunter",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
     link: "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
     description: "Adventure, battles and strategy.",
@@ -203,6 +223,7 @@ const animeData = [
   {
     title: "Parasyte",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
     link: "https://www.crunchyroll.com/search?q=Parasyte",
     description: "Alien parasites invade humanity.",
@@ -213,6 +234,7 @@ const animeData = [
   {
     title: "Akame ga Kill",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
     link: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill",
     description: "Assassins versus corruption.",
@@ -223,6 +245,7 @@ const animeData = [
   {
     title: "Classroom of the Elite",
     category: "action",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/5/86830.jpg",
     link: "https://www.crunchyroll.com/search?q=Classroom%20of%20the%20Elite",
     description: "Manipulation and mind games.",
@@ -233,6 +256,7 @@ const animeData = [
   {
     title: "Toradora",
     category: "romance",
+    genre: ["Action", "Adventure"],
     img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
     link: "https://www.crunchyroll.com/search?q=Toradora",
     description: "Chaotic high school romance.",
@@ -243,6 +267,7 @@ const animeData = [
 {
   title: "Your Lie in April",
   category: "romance",
+  genre: ["Action", "Adventure"], 
   img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
   link: "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
   description: "Music, trauma and love.",
@@ -253,6 +278,7 @@ const animeData = [
 {
   title: "Fire Force",
   category: "action",
+  genre: ["Action", "Adventure"],
   img: "Fire Force.jpg",
   link: "https://www.crunchyroll.com/search?q=Fire%20Force",
   description: "Fire-powered soldiers fight infernals.",
@@ -263,6 +289,7 @@ const animeData = [
 {
   title: "The Promised Neverland",
   category: "action",
+  genre: ["Action", "Adventure"],
   img: "The Promised Neverland.jpg",
   link: "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
   description: "Children uncover terrifying secrets.",
@@ -273,6 +300,7 @@ const animeData = [
 {
   title: "Darling in the FranXX",
   category: "romance",
+  genre: ["Action", "Adventure"],
   img: "Darling in the FranXX.jpg",
   link: "https://www.crunchyroll.com/search?q=Darling%20in%20the%20FranXX",
   description: "Mecha battles and emotional bonds.",
@@ -283,6 +311,7 @@ const animeData = [
 {
   title: "Clannad",
   category: "romance",
+  genre: ["Action", "Adventure"],
   img: "Clannad.jpg",
   link: "https://www.crunchyroll.com/search?q=Clannad",
   description: "Family, emotions and relationships.",
@@ -293,6 +322,7 @@ const animeData = [
 {
   title: "Record of Ragnarok",
   category: "action",
+  genre: ["Action", "Adventure"],
   img: "record of ragnarok.jpg",
   link: "https://www.crunchyroll.com/search?q=Record%20of%20Ragnarok",
   description: "Gods and humans fight legendary battles to decide humanity’s fate.",
@@ -340,6 +370,10 @@ card.innerHTML = `
   <p class="rating">⭐ ${anime.rating}</p>
 
   <p class="episodes">${anime.episodes}</p>
+
+<div class="genres">
+  ${anime.genre.map(g => `<span>${g}</span>`).join("")}
+</div>
 
   <button class="fav-btn">
     ❤️ Favorite
