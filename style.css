@@ -312,3 +312,9 @@ section h2 {
 
   color: #ddd;
 }
+#trailerFrame {
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+}
