@@ -243,3 +243,27 @@ section h2 {
 
   font-weight: bold;
 }
+.continue-section {
+  padding: 20px;
+}
+
+#continueContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.continue-item {
+
+  background: #222;
+
+  border-left: 4px solid crimson;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-weight: bold;
+}
