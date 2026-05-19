@@ -61,12 +61,13 @@ header {
 }
 
 .hero {
+.hero {
   height: 90vh;
 
   background:
     linear-gradient(rgba(0,0,0,0.7),
     rgba(0,0,0,0.8)),
-    url("https://wallpaperaccess.com/full/3703013.jpg");
+    url("https://images6.alphacoders.com/606/606263.jpg");
 
   background-size: cover;
   background-position: center;
