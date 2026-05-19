@@ -267,3 +267,23 @@ section h2 {
 
   font-weight: bold;
 }
+.rating {
+
+  text-align: center;
+  color: gold;
+
+  font-weight: bold;
+
+  margin-top: -5px;
+}
+
+.episodes {
+
+  text-align: center;
+
+  color: #bbb;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+}
