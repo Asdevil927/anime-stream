@@ -268,13 +268,24 @@ filteredAnime.forEach(anime => {
 const card = document.createElement("div");  
 
 card.classList.add("card");  
-  
+
 card.innerHTML = `
 
-  <img src="${anime.img}" alt="${anime.title}">    <h3>${anime.title}</h3>    <button class="fav-btn">  
-    ❤️ Favorite  
-  </button>  
-`;  card.addEventListener("click", () => {  
+  <img src="${anime.img}" alt="${anime.title}">
+
+  <h3>${anime.title}</h3>
+
+  <p class="rating">⭐ ${anime.rating}</p>
+
+  <p class="episodes">${anime.episodes}</p>
+
+  <button class="fav-btn">
+    ❤️ Favorite
+  </button>
+
+`;
+  
+card.addEventListener("click", () => {  
 
   document.getElementById("animeModal").style.display = "block";  
 
