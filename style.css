@@ -221,3 +221,25 @@ section h2 {
   text-decoration: none;
   border-radius: 8px;
 }
+.favorites-section {
+  padding: 20px;
+}
+
+#favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.favorite-item {
+
+  background: crimson;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-weight: bold;
+}
