@@ -411,3 +411,28 @@ setInterval(() => {
     featuredList[currentFeatured];
 
 }, 2500);
+function renderFavorites() {
+
+  const favoritesContainer =
+    document.getElementById("favoritesContainer");
+
+  favoritesContainer.innerHTML = "";
+
+  const favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
+  favorites.forEach(fav => {
+
+    const item = document.createElement("div");
+
+    item.classList.add("favorite-item");
+
+    item.innerText = fav;
+
+    favoritesContainer.appendChild(item);
+
+  });
+
+}
+
+renderFavorites();
